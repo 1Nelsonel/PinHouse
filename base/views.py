@@ -1,3 +1,4 @@
+from multiprocessing import context
 from django.shortcuts import render
 from django.db.models import Q
 from .models import Property, Type, Message
@@ -6,7 +7,10 @@ from .models import Property, Type, Message
 
 
 def home(request):
-    return render(request, 'base/home.html')
+    houses = Property.objects.all()
+
+    context = {'houses': houses}
+    return render(request, 'base/home.html', context)
 
 
 def about(request):

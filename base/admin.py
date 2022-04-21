@@ -1,10 +1,11 @@
 from django.contrib import admin
 from . models import Property, Type, Message
+from  embed_video.admin  import  AdminVideoMixin
 
 # Register your models here.
 
 @admin.register(Property)
-class ProductAdmin(admin.ModelAdmin):
+class ProductAdmin(AdminVideoMixin, admin.ModelAdmin):
     list_display = ("name", "location","host","price")
     search_fields = ("name__startswith", "type__startswith" )
     list_filter = ("name", "type", "price","location" )

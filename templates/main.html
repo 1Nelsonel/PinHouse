@@ -1,13 +1,9 @@
-{% load bootstrap5 %}
-<!-- Load the tag library -->
-<!-- Load CSS and JavaScript -->
-{% bootstrap_css %}
-{% bootstrap_javascript %}
-<!-- Display django.contrib.messages as Bootstrap alerts  -->
+<!-- {% load bootstrap5 %} -->
+<!-- {% bootstrap_css %} -->
+<!-- {% bootstrap_javascript %} -->
+
 {% bootstrap_messages %}
-<!-- bootstrap icons -->
-{% load bootstrap_icons %}
-<!-- load static -->
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -29,7 +25,7 @@
 
   <!-- Vendor CSS Files -->
   <link href="{% static 'vendor/animate.css/animate.min.css' %}" rel="stylesheet">
-  <!-- <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet"> -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
   <link href="{% static 'vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
 
