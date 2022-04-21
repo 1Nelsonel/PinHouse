@@ -46,19 +46,19 @@
                     <div id="property-single-carousel" class="swiper">
                         <div class="swiper-wrapper">
                             <div class="carousel-item-b swiper-slide ">
-                                <img src="{{property.houseimage1.url}}" alt="" height="450" width="850">
+                                <img src="{{property.houseimage1.url}}" alt="" height="450" width="100%">
                             </div>
                             <div class="carousel-item-b swiper-slide ">
-                                <img src="{{property.livingroomimage2.url}}" alt="" height="450" width="850">
+                                <img src="{{property.livingroomimage2.url}}" alt="" height="450" width="100%">
                             </div>
                             <div class="carousel-item-b swiper-slide ">
-                                <img src="{{property.kitchenimage3.url}}" alt="" height="450" width="850">
+                                <img src="{{property.kitchenimage3.url}}" alt="" height="450" width="100%">
                             </div>
                             <div class="carousel-item-b swiper-slide ">
-                                <img src="{{property.bathroomimage4.url}}" alt="" height="450" width="850">
+                                <img src="{{property.bathroomimage4.url}}" alt="" height="450" width="100%">
                             </div>
                             <div class="carousel-item-b swiper-slide ">
-                                <img src="{{property.bedroomimage5.url}}" alt="" height="450" width="850">
+                                <img src="{{property.bedroomimage5.url}}" alt="" height="450" width="100%">
                             </div>
                         </div>
                         <div class="property-single-carousel-pagination carousel-pagination"></div>
@@ -73,10 +73,10 @@
                                 <div class="property-price d-flex justify-content-center foo">
                                     <div class="card-header-c d-flex">
                                         <div class="card-box-ico">
-                                            <span class="bi bi-cash">kSH</span>
+                                            <span class="bi bi-cash"></span>
                                         </div>
                                         <div class="card-title-c align-self-center">
-                                            <h5 class="title-c">{{property.price}}</h5>
+                                            <h5 class="title-c">Ksh: {{property.price}}</h5>
                                         </div>
                                     </div>
                                 </div>
@@ -189,7 +189,9 @@
                         <div class="tab-content" id="pills-tabContent">
                             <div class="tab-pane fade show active" id="pills-video" role="tabpanel"
                                 aria-labelledby="pills-video-tab">
-                                {% video property.videolink 'medium' %}
+                               
+                                {% video property.videolink '100% x 460' %}
+                                
                             </div>
                             <div class="tab-pane fade" id="pills-plans" role="tabpanel"
                                 aria-labelledby="pills-plans-tab">
